@@ -1,0 +1,20 @@
+.contact.list {
+  display: flex;
+  margin-left: auto;
+}
+
+.cont-items:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts {
+  @include flex(flex, flex-start);
+  color: $secondary-text-color;
+}
+
+.icon-contact {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}

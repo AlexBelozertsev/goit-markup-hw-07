@@ -1,0 +1,18 @@
+@mixin transition($property) {
+  transition: $property $time-tranforming $form-transforming;
+}
+
+@mixin flex($box-form, $alight-form) {
+  display: $box-form;
+  align-items: center;
+  justify-content: $alight-form;
+}
+
+@function f-s($px) {
+  @return ($px / 16) + rem;
+}
+
+@mixin font($fweight, $lspacing) {
+  font-weight: $fweight;
+  letter-spacing: $lspacing;
+}
