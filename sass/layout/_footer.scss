@@ -1,0 +1,7 @@
+.footer {
+  background-color: $footer-background-color;
+
+  & > .container {
+    @include flex(flex, space-between);
+  }
+}
