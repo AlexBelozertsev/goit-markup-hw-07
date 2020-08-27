@@ -12,14 +12,20 @@
       $first-background-color
     ),
     url('../images/Header.jpg');
-}
 
-.hero-title {
-  color: $third-color;
+  &-title {
+    color: $third-color;
 
-  @include font(900, 1.36, 0.06em);
-  font-size: f-s(44);
-  text-transform: uppercase;
+    @include font(900, 1.36, 0.06em);
+    font-size: f-s(44);
+    text-transform: uppercase;
+    text-align: center;
 
-  margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  & .container {
+    @include flex(flex, center);
+    flex-direction: column;
+  }
 }
