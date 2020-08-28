@@ -10,3 +10,7 @@
     @include flex(flex, space-between);
   }
 }
+
+@import '../components/footer-blocks';
+@import '../components/footer-links';
+@import '../components/footer-form-section';

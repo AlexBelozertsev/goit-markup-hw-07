@@ -1,0 +1,12 @@
+.logo {
+  margin-right: 85px;
+
+  color: $logo-text-color;
+  font-family: $secondary-font;
+  font-size: f-s(26);
+  line-height: 1.19;
+
+  &-web {
+    color: $accent-text-color;
+  }
+}

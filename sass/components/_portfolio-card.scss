@@ -5,10 +5,8 @@
 
 .portfolio-card {
   width: calc((100% - (2 * 30px)) / 3);
-
   margin-right: 30px;
   margin-bottom: 30px;
-
   transition: box-shadow $time-tranforming $form-transforming;
 
   &:nth-child(3n) {
@@ -28,31 +26,9 @@
     display: block;
   }
 
-  & .text {
-    line-height: 1.9;
-  }
-
   & > a:hover .hover-text {
     transform: translateY(0);
   }
-}
-
-.card-title {
-  @include border(1px, $border-portfolio-card);
-  border-top: none;
-  padding: 20px 24px;
-}
-.portfolio-title {
-  @include font(700, 2, 0.06em);
-  font-size: f-s(18);
-  color: $primary-text-color;
-
-  margin-bottom: 4px;
-}
-
-.card-img {
-  position: relative;
-  overflow: hidden;
 }
 
 .hover-text {
@@ -60,14 +36,35 @@
   top: 0;
   left: 0;
   width: 370px;
-
   color: $third-color;
   background-color: $hover-card-color;
-
   font-size: f-s(18);
   line-height: 1.56;
   padding: 63px 24px;
-
   transform: translateY(100%);
   transition: transform $time-tranforming $form-transforming;
+}
+
+.card {
+  &-description {
+    @include border(1px, $border-portfolio-card);
+    border-top: none;
+    padding: 20px 24px;
+  }
+
+  &-title {
+    @include font(700, 2, 0.06em);
+    font-size: f-s(18);
+    color: $primary-text-color;
+    margin-bottom: 4px;
+  }
+
+  &-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  & .text {
+    line-height: 1.9;
+  }
 }

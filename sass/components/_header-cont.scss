@@ -8,6 +8,7 @@
 }
 
 .contacts {
+  @extend %nav-link;
   @include flex(flex, flex-start);
   color: $secondary-text-color;
 }

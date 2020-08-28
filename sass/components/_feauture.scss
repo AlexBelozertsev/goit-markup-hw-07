@@ -1,31 +1,35 @@
 .feature {
   font-size: f-s(14);
   padding: 94px calc((100% - 1200px) / 2);
-}
-.feature-primary-title {
-  @include vis-hidden;
-}
-.feature .list {
-  display: flex;
-}
-.feature-icon {
-  background-color: $second-background-color;
-  width: 270px;
-  height: 120px;
 
-  border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 25px 100px;
-}
-.feature-item:not(:last-child) {
-  margin-right: 30px;
-}
-.feature .title {
-  @include font(700, 1.14, inherit);
-  text-transform: uppercase;
+  & .list {
+    display: flex;
+  }
 
-  margin-bottom: 10px;
+  &-primary-title {
+    @include vis-hidden;
+  }
+
+  &-icon {
+    background-color: $second-background-color;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 25px 100px;
+  }
+
+  &-item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  & .title {
+    @include font(700, 1.14, inherit);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 }
+
 .text {
   color: $secondary-text-color;
 }

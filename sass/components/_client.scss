@@ -15,26 +15,24 @@
     margin-right: 30px;
   }
 
+  &-item a {
+    @include flex(flex, center);
+    width: 170px;
+    height: 90px;
+    color: $border-color;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    transition: color $time-tranforming $form-transforming,
+      border $time-tranforming $form-transforming;
+
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+      @include border(1px, $accent-text-color);
+    }
+  }
+
   &-link {
     fill: currentColor;
-  }
-}
-
-.client-item a {
-  @include flex(flex, center);
-
-  width: 170px;
-  height: 90px;
-  color: $border-color;
-  border: 1px solid $border-color;
-  border-radius: 4px;
-
-  transition: color $time-tranforming $form-transforming,
-    border $time-tranforming $form-transforming;
-
-  &:hover,
-  &:focus {
-    color: $accent-text-color;
-    @include border(1px, $accent-text-color);
   }
 }

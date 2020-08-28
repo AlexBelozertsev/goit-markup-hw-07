@@ -12,17 +12,13 @@
 
 .button.menu {
   display: block;
-
   color: $primary-text-color;
   background-color: $second-background-color;
-
   @include font(500, 1.62, 0.03em);
-
   padding: 6px 22px;
   min-width: 73px;
   min-height: 38px;
   box-shadow: none;
-
   transition: color $time-tranforming $form-transforming,
     background-color $time-tranforming $form-transforming,
     box-shadow $time-tranforming $form-transforming;

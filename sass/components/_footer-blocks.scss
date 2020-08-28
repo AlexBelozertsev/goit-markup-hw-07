@@ -1,3 +1,18 @@
+.footer {
+  @include flex(flex, center);
+
+  & .logo,
+  & .title {
+    color: $third-color;
+  }
+
+  & .title {
+    font-size: f-s(14);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}
+
 .footer-block {
   & > h2 {
     @include vis-hidden;
@@ -10,21 +25,9 @@
   & > .list {
     @include flex(flex, space-evenly);
   }
-}
 
-.footer {
-  @include flex(flex, center);
-
-  & .logo,
-  & .title {
-    color: $third-color;
-  }
-
-  & .title {
-    font-size: f-s(14);
-    text-transform: uppercase;
-
-    margin-bottom: 20px;
+  &:nth-child(3n) {
+    width: calc(50% - 15px);
   }
 }
 
@@ -32,12 +35,10 @@
   font-style: normal;
   @include font(400, 1.71, inherit);
   font-size: f-s(14);
-
   margin-top: 20px;
 
   & .contacts {
     color: $fourth-text-color;
-
     margin-top: 9px;
     padding: 0;
   }
