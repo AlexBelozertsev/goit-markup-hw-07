@@ -69,3 +69,7 @@
 .form-elements input:hover ~ .icon-form-elements {
   fill: $accent-text-color;
 }
+
+form .button {
+  @include flex(flex, center);
+}

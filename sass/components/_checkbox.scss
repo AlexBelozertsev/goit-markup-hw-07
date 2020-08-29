@@ -33,4 +33,9 @@
   @include border(2px, $primary-text-color);
   border-radius: 2px;
   transition: background-color $time-tranforming $form-transforming;
+  cursor: pointer;
+
+  &:hover {
+    @include border(2px, $accent-text-color);
+  }
 }

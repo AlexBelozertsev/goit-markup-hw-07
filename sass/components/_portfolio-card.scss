@@ -64,7 +64,8 @@
     overflow: hidden;
   }
 
-  & .text {
+  &-text {
+    color: $secondary-text-color;
     line-height: 1.9;
   }
 }
