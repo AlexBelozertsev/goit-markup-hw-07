@@ -116,11 +116,13 @@ a {
 }
 
 .logo {
-  margin-right: 85px;
-  color: #000000;
   font-family: Raleway, sans-serif;
-  font-size: 1.625rem;
+  font-weight: 700;
   line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-size: 1.625rem;
+  color: #000000;
+  margin-right: 85px;
 }
 
 .logo-web {
@@ -342,10 +344,7 @@ nav .list {
 }
 
 .footer {
-  max-width: 1600px;
   height: 252px;
-  margin-right: auto;
-  margin-left: auto;
   background-color: #2f303a;
 }
 
